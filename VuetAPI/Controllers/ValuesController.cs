@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using VuetAPI.Models;
 
 namespace VuetAPI.Controllers
 {
@@ -10,18 +11,32 @@ namespace VuetAPI.Controllers
     [ApiController]
     public class ValuesController : ControllerBase
     {
+        private ValueRepository valueRepository = new ValueRepository();
+        
         // GET api/values
         [HttpGet]
-        public ActionResult<IEnumerable<string>> Get()
+        public JsonResult All()
         {
-            return new string[] { "value1", "value2" };
+            return new JsonResult(new { Values = valueRepository.All() });
         }
 
         // GET api/values/5
         [HttpGet("{id}")]
-        public ActionResult<string> Get(int id)
+        public JsonResult Element(int id)
         {
-            return "value";
+            return new JsonResult(new { Value = valueRepository.Item(id) });
+        }
+
+        [HttpGet("routes")]
+        public JsonResult Routes(int id)
+        {
+            return new JsonResult(
+                new object[]
+                {
+                    new { Route = "/api/values/", Result = All() },
+                    new { Route = "/api/values/{id}", Result = Element(1)}
+                }
+                );
         }
 
         // POST api/values
