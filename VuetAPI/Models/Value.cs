@@ -7,10 +7,21 @@ namespace VuetAPI.Models
 {
     public class Value
     {
-        public int Id { get; set; }
-        public string Name { get; set; }
-        public string Description { get; set; }
-        public bool Exists { get; set; }
-        public decimal Price { get; set; }
+        public readonly int Id;
+        public readonly string Name;
+        public readonly string Description;
+        public readonly bool Exists;
+        public readonly decimal Price;
+        public readonly string Icon;
+
+        public Value(int id, string name, string description, bool exists, decimal price, string icon)
+        {
+            Id = id;
+            Name = name;
+            Description = description;
+            Exists = exists;
+            Price = price;
+            Icon = icon;
+        }
     }
 }
