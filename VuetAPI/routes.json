@@ -1,0 +1,57 @@
+[{
+    "route": "/api/values/",
+    "result": {
+        "contentType": null,
+        "serializerSettings": null,
+        "statusCode": null,
+        "value": {
+            "values": [{
+                "id": 1,
+                "name": "First Item",
+                "description": "This is the description of the first item",
+                "exists": true,
+                "price": 1.1
+            }, {
+                "id": 2,
+                "name": "Second Item",
+                "description": "This is the description of the second item",
+                "exists": false,
+                "price": 2.2
+            }, {
+                "id": 3,
+                "name": "Third Item",
+                "description": "This is the description of the third item",
+                "exists": true,
+                "price": 3.3
+            }, {
+                "id": 4,
+                "name": "Fourth Item",
+                "description": "This is the description of the fourth item",
+                "exists": false,
+                "price": 4.4
+            }, {
+                "id": 5,
+                "name": "Fifth Item",
+                "description": "This is the description of the fifth item",
+                "exists": true,
+                "price": 5.5
+            }]
+        }
+    }
+}, {
+    "route": "/api/values/{id}",
+    "result": {
+        "contentType": null,
+        "serializerSettings": null,
+        "statusCode": null,
+        "value": {
+            "value": {
+                "id": 1,
+                "name": "First Item",
+                "description": "This is the description of the first item",
+                "exists": true,
+                "price": 1.1
+            }
+        }
+    }
+}]
