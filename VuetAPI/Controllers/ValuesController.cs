@@ -17,7 +17,7 @@ namespace VuetAPI.Controllers
         [HttpGet]
         public JsonResult All()
         {
-            return new JsonResult(new { Values = valueRepository.All() });
+            return new JsonResult(new { Values = ValueRepository.values });
         }
 
         // GET api/values/5
@@ -41,8 +41,9 @@ namespace VuetAPI.Controllers
 
         // POST api/values
         [HttpPost]
-        public void Post([FromBody] string value)
+        public void Insert([FromBody] Value entity)
         {
+            valueRepository.Insert(entity);
         }
 
         // PUT api/values/5
@@ -55,6 +56,7 @@ namespace VuetAPI.Controllers
         [HttpDelete("{id}")]
         public void Delete(int id)
         {
+            valueRepository.Delete(id);
         }
     }
 }
