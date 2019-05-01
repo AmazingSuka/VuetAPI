@@ -1,0 +1,14 @@
+C:\Users\dulck\source\repos\VuetAPI\VuetAPI\bin\Debug\netcoreapp2.1\VuetAPI.deps.json
+C:\Users\dulck\source\repos\VuetAPI\VuetAPI\bin\Debug\netcoreapp2.1\VuetAPI.runtimeconfig.json
+C:\Users\dulck\source\repos\VuetAPI\VuetAPI\bin\Debug\netcoreapp2.1\VuetAPI.runtimeconfig.dev.json
+C:\Users\dulck\source\repos\VuetAPI\VuetAPI\bin\Debug\netcoreapp2.1\VuetAPI.dll
+C:\Users\dulck\source\repos\VuetAPI\VuetAPI\bin\Debug\netcoreapp2.1\VuetAPI.pdb
+C:\Users\dulck\source\repos\VuetAPI\VuetAPI\obj\Debug\netcoreapp2.1\VuetAPI.csprojAssemblyReference.cache
+C:\Users\dulck\source\repos\VuetAPI\VuetAPI\obj\Debug\netcoreapp2.1\VuetAPI.csproj.CoreCompileInputs.cache
+C:\Users\dulck\source\repos\VuetAPI\VuetAPI\obj\Debug\netcoreapp2.1\VuetAPI.RazorAssemblyInfo.cache
+C:\Users\dulck\source\repos\VuetAPI\VuetAPI\obj\Debug\netcoreapp2.1\VuetAPI.RazorAssemblyInfo.cs
+C:\Users\dulck\source\repos\VuetAPI\VuetAPI\obj\Debug\netcoreapp2.1\VuetAPI.AssemblyInfoInputs.cache
+C:\Users\dulck\source\repos\VuetAPI\VuetAPI\obj\Debug\netcoreapp2.1\VuetAPI.AssemblyInfo.cs
+C:\Users\dulck\source\repos\VuetAPI\VuetAPI\obj\Debug\netcoreapp2.1\VuetAPI.RazorTargetAssemblyInfo.cache
+C:\Users\dulck\source\repos\VuetAPI\VuetAPI\obj\Debug\netcoreapp2.1\VuetAPI.dll
+C:\Users\dulck\source\repos\VuetAPI\VuetAPI\obj\Debug\netcoreapp2.1\VuetAPI.pdb
