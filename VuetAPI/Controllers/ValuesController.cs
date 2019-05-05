@@ -4,6 +4,13 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using VuetAPI.Models;
+using Microsoft.AspNetCore.Mvc.Formatters.Json;
+using System.Net;
+using System.Text.RegularExpressions;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
+using System.Security.Claims;
+using Microsoft.AspNetCore.Http;
 
 namespace VuetAPI.Controllers
 {
@@ -12,12 +19,13 @@ namespace VuetAPI.Controllers
     public class ValuesController : ControllerBase
     {
         private ValueRepository valueRepository = new ValueRepository();
-        
+
         // GET api/values
         [HttpGet]
         public JsonResult All()
         {
             return new JsonResult(new { Values = ValueRepository.values });
+            
         }
 
         // GET api/values/5

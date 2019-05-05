@@ -26,6 +26,7 @@ namespace VuetAPI
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+            services.AddSession();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -39,7 +40,7 @@ namespace VuetAPI
             {
                 app.UseHsts();
             }
-
+            app.UseSession();
             app.UseDefaultFiles();
             app.UseStaticFiles();
             app.UseHttpsRedirection();
