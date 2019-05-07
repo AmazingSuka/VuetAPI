@@ -24,7 +24,7 @@ namespace VuetAPI.Controllers
         [HttpGet]
         public JsonResult All()
         {
-            return new JsonResult(new { Values = ValueRepository.values });
+            return new JsonResult(ValueRepository.values);
             
         }
 
@@ -32,19 +32,7 @@ namespace VuetAPI.Controllers
         [HttpGet("{id}")]
         public JsonResult Element(int id)
         {
-            return new JsonResult(new { Value = valueRepository.Item(id) });
-        }
-
-        [HttpGet("routes")]
-        public JsonResult Routes(int id)
-        {
-            return new JsonResult(
-                new object[]
-                {
-                    new { Route = "/api/values/", Result = All() },
-                    new { Route = "/api/values/{id}", Result = Element(1)}
-                }
-                );
+            return new JsonResult(valueRepository.Item(id));
         }
 
         // POST api/values
